@@ -34,22 +34,32 @@ body {
 }
 
 .login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-self: center;
 }
 
-.username-box {
-  background-image: url("../images/icons/user.png") no-repeat scroll 7px 7px;
-  padding-left: 30px;
-}
-.password-box {
-  background-image: url("../images/icons/lock.png") no-repeat scroll 7px 7px;
-  padding-left: 30px;
-}
 .input-box {
-  display: inline;
-  width: 50px;
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 80px;
 }
 
 .login-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 600px;
+}
+
+.login-box.input-box {
+  border: none;
+  color: black;
+  background: lightgray;
+  height: 30px;
+  outline: none;
 }
