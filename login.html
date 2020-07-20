@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign in | Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    
+    <body>
+        <section>
+            <div class="container">
+                <div class="user signinBx">
+                    <div class="imgBx"><img src="images/logo.png.png" style="object-fit: contain; padding: 210px 50px 210px 50px;"></div>
+                    <div class="formBx">
+                        <form>
+                            <h2>Sign In</h2>
+                            <input type="text" name="" placeholder="Username">
+                            <input type="password" name="" placeholder="Password">
+                            <input type="submit" name="" value="Login">
+                            <p class="signup">Don't have an account ? <a href="#" onclick="toggleForm();">Sign Up.</a></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="user signupBx">
+                    <div class="formBx">
+                        <form>
+                            <h2>Create Account</h2>
+                            <input type="text" name="" placeholder="Username">
+                            <input type="email" name="" placeholder="Email Address">
+                            <input type="password" name="" placeholder="Create Password">
+                            <input type="password" name="" placeholder="Confirm Password">
+                            <input type="submit" name="" value="Signup">
+                            <p class="signup">ALready have an account ? <a href="#" onclick="toggleForm();">Sign In.</a></p>
+                        </form>
+                    </div>
+                    <div class="imgBx"><img src="images/image2.jpg"></div>
+                </div>
+            </div>
+        </section>
+        
+        <script type="text/javascript">
+            function toggleForm(){
+                var container = document.querySelector('.container');
+                container.classList.toggle('active')
+            }
+        </script>
+        
+    </body>
+
+</html>
